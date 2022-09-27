@@ -67,9 +67,9 @@ if __name__ == '__main__':
 
         #spark processing
         SparkDF = spark.createDataFrame(df)
-        sparkDF.groupBy("order_date").sum("order_id") \
+        SparkDF.groupBy("order_date").sum("order_id") \
             .toPandas() \
-                .to_csv(f"output.csv", index=False)
+                .to_csv(f"/mnt/e/digitalskola/linux/spark_batch_processing/output.csv", index=False)
 
         print(f"[INFO] Service ETL is Success .....")
     except:

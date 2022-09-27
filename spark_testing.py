@@ -1,3 +1,4 @@
+#ipython3
 from pyspark.sql import SparkSession
 from pyspark import SparkContext
 
@@ -21,7 +22,7 @@ def spark_conn(app, config):
     except:
         print(f"[INFO] Success Can't SPARK ENGINE .....")
 
-spark = spark_conn('Testing', {"ip":"spark://DESKTOP-0MSIGRU.localdomain:7077"})
+spark = spark_conn('Testing', {"ip":"spark://Novian.localdomain:7077"})
 
 sparkDF=spark.createDataFrame(pandasDF) 
 da = sparkDF.toPandas()

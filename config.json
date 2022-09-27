@@ -1,6 +1,6 @@
 {
     "postgresql":{
-        "host":"192.168.90.184",
+        "host":"172.20.66.13",
         "db":"digitalskola",
         "user":"postgres",
         "pwd":"admin",
@@ -8,7 +8,7 @@
     },
     
     "warehouse":{
-        "host":"192.168.90.184",
+        "host":"172.20.66.13",
         "db":"dwh_digitalskola",
         "user":"postgres",
         "pwd":"admin",
@@ -16,7 +16,7 @@
     },
 
     "hadoop":{
-        "client":"http://localhost:9870/"
+        "client":"http://172.20.66.13:9870/"
     },
 
     "spark":{
